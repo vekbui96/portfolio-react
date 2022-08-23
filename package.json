@@ -1,11 +1,13 @@
 {
-  "homepage" : "https://vekbui96.github.io/portfolio-react",
+  "homepage": "https://vekbui96.github.io/portfolio-react",
   "name": "rokstar-react",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "private": true,
   "scripts": {
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
@@ -24,6 +26,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
+    "gh-pages": "^4.0.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.1",
